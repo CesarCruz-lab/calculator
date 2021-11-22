@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Stack, TextField } from '@mui/material';
+import { Container, Stack, TextField, Typography } from '@mui/material';
 import Digits from './Digits';
 
 const Calculator: React.FC = () => {
@@ -80,6 +80,22 @@ const Calculator: React.FC = () => {
 
   return (
     <Container className="page">
+      <Stack
+        direction="column"
+        width=" 100%"
+        height="max-content"
+        maxWidth="500px"
+        sx={{
+          width: 'max-content',
+          marginBottom: 5,
+          padding: '4px 8px',
+          borderRadius: 1,
+          backgroundColor: ({ palette }) => palette.secondary.main,
+        }}>
+        <Typography variant="h1" textAlign="center">
+          Calculator
+        </Typography>
+      </Stack>
       <Stack direction="column" width=" 100%" height="max-content" maxWidth="500px">
         <TextField fullWidth value={screenValue} sx={{ '*': { fontSize: '32px !important', textAlign: 'right' } }} />
       </Stack>

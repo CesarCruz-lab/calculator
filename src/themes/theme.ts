@@ -14,6 +14,20 @@ const theme = createTheme({
       secondary: '#747474',
     },
   },
+  typography: {
+    allVariants: {
+      color: '#454545',
+      margin: '0 !important',
+      padding: '0 !important',
+      fontFamily: 'Gemunu Libre',
+      marginBlockStart: 0,
+      marginBlockEnd: 0,
+    },
+    h1: {
+      fontSize: 48,
+      fontWeight: 600,
+    },
+  },
   components: {
     MuiContainer: {
       variants: [
