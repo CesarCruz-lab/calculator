@@ -18,7 +18,7 @@ const Digits: React.FC<Props> = ({ handleClick, handleKeyDown, ...rest }) => {
   }, [handleKeyDown]);
 
   return (
-    <Grid container md={12} spacing={0.5} {...rest}>
+    <Grid container spacing={0.5} {...rest}>
       <Grid item xs={3}>
         <Button name="clear" onClick={handleClick}>
           C
