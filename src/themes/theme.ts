@@ -41,6 +41,7 @@ const theme = createTheme({
             color: '#454545',
           },
           '*': {
+            fontFamily: 'Gemunu Libre, sans-serif',
             border: 'none !important',
             borderRadius: 8,
           },
@@ -65,6 +66,7 @@ const theme = createTheme({
           boxShadow: 'inset 0 0 0 4px #ccc',
           transition: 'filter, 200ms',
           fontSize: 32,
+          fontFamily: 'Gemunu Libre, sans-serif',
           '&:hover': {
             backgroundColor: '#f0f0f0',
             filter: 'brightness(0.9)',
